@@ -2,6 +2,8 @@
 
 A comprehensive platform for evaluating and comparing Google's Gemini with other multimodal AI models (like GPT-4V) across text, image, video, and audio tasks. The platform enables standardized testing and visualization of model performance across various benchmarking scenarios.
 
+![Multimodal AI Benchmark Platform](generated-icon.avif)
+
 ## Features
 
 - **Multi-Model Evaluation**: Test and compare multiple AI models including:
