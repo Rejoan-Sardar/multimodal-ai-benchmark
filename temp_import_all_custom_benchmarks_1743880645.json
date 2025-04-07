@@ -1,0 +1,80 @@
+{
+  "exported_at": "2025-04-05 19:17:25",
+  "benchmarks": [
+    {
+      "id": "custom_1743640311_20befb63",
+      "name": "fafaf",
+      "type": "multimodal",
+      "description": "fafa",
+      "metrics": [
+        "accuracy",
+        "relevance"
+      ],
+      "created_at": "2025-04-03 00:31:51",
+      "is_custom": true,
+      "example": {
+        "task_description": "faf"
+      }
+    },
+    {
+      "id": "custom_1743640311_20befb63",
+      "name": "fafaf",
+      "type": "multimodal",
+      "description": "fafa",
+      "metrics": [
+        "accuracy",
+        "relevance"
+      ],
+      "created_at": "2025-04-03 00:31:51",
+      "is_custom": true,
+      "example": {
+        "task_description": "faf"
+      }
+    },
+    {
+      "id": "custom_1743641428_7c4825b3",
+      "name": "apple",
+      "type": "multimodal",
+      "description": "apple are",
+      "metrics": [
+        "accuracy",
+        "relevance"
+      ],
+      "created_at": "2025-04-03 00:50:28",
+      "is_custom": true,
+      "example": {
+        "task_description": "good"
+      }
+    },
+    {
+      "id": "custom_1743641428_7c4825b3",
+      "name": "apple",
+      "type": "multimodal",
+      "description": "apple are",
+      "metrics": [
+        "accuracy",
+        "relevance"
+      ],
+      "created_at": "2025-04-03 00:50:28",
+      "is_custom": true,
+      "example": {
+        "task_description": "good"
+      }
+    },
+    {
+      "id": "custom_1743880608_4ea72cff",
+      "name": "jnbv",
+      "type": "multimodal",
+      "description": "kjhgvc",
+      "metrics": [
+        "accuracy",
+        "relevance"
+      ],
+      "created_at": "2025-04-05 19:16:48",
+      "is_custom": true,
+      "example": {
+        "task_description": "kjhgv"
+      }
+    }
+  ]
+}

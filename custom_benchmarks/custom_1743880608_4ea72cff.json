@@ -1,0 +1,15 @@
+{
+  "id": "custom_1743880608_4ea72cff",
+  "name": "jnbv",
+  "type": "multimodal",
+  "description": "kjhgvc",
+  "metrics": [
+    "accuracy",
+    "relevance"
+  ],
+  "created_at": "2025-04-05 19:16:48",
+  "is_custom": true,
+  "example": {
+    "task_description": "kjhgv"
+  }
+}

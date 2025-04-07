@@ -1,0 +1,240 @@
+{
+  "benchmarks": [
+    {
+      "id": "text-general-knowledge",
+      "name": "General Knowledge Q&A",
+      "type": "text",
+      "description": "This benchmark tests the model's ability to answer general knowledge questions accurately.",
+      "metrics": ["accuracy", "relevance", "hallucination_rate"],
+      "example": {
+        "input": "What is the capital of France?",
+        "expected_output": "The capital of France is Paris."
+      },
+      "tasks": [
+        {
+          "input": "What is the capital of France?",
+          "expected_output": "The capital of France is Paris."
+        },
+        {
+          "input": "Who wrote 'Pride and Prejudice'?",
+          "expected_output": "Jane Austen wrote 'Pride and Prejudice'."
+        },
+        {
+          "input": "What is the chemical symbol for gold?",
+          "expected_output": "The chemical symbol for gold is Au."
+        },
+        {
+          "input": "What year did World War II end?",
+          "expected_output": "World War II ended in 1945."
+        },
+        {
+          "input": "What is the largest ocean on Earth?",
+          "expected_output": "The Pacific Ocean is the largest ocean on Earth."
+        }
+      ]
+    },
+    {
+      "id": "text-code-completion",
+      "name": "Code Completion",
+      "type": "text",
+      "description": "This benchmark evaluates the model's ability to complete code snippets correctly.",
+      "metrics": ["accuracy", "relevance", "coherence"],
+      "example": {
+        "input": "Write a Python function to check if a string is a palindrome.",
+        "expected_output": "def is_palindrome(s):\n    s = s.lower()\n    s = ''.join(c for c in s if c.isalnum())\n    return s == s[::-1]"
+      },
+      "tasks": [
+        {
+          "input": "Write a Python function to check if a string is a palindrome.",
+          "expected_output": "def is_palindrome(s):\n    s = s.lower()\n    s = ''.join(c for c in s if c.isalnum())\n    return s == s[::-1]"
+        },
+        {
+          "input": "Write a JavaScript function to calculate the factorial of a number.",
+          "expected_output": "function factorial(n) {\n  if (n === 0 || n === 1) {\n    return 1;\n  }\n  return n * factorial(n - 1);\n}"
+        },
+        {
+          "input": "Create a SQL query to select all customers who made purchases over $100.",
+          "expected_output": "SELECT c.customer_id, c.name, c.email\nFROM customers c\nJOIN orders o ON c.customer_id = o.customer_id\nWHERE o.total_amount > 100;\n"
+        }
+      ]
+    },
+    {
+      "id": "text-creative-writing",
+      "name": "Creative Writing",
+      "type": "text",
+      "description": "This benchmark tests the model's creative writing capabilities.",
+      "metrics": ["coherence", "relevance", "creativity"],
+      "example": {
+        "input": "Write a short story about a robot discovering human emotions.",
+        "expected_output": "A creative short story about a robot discovering human emotions, with coherent narrative and emotional depth."
+      },
+      "tasks": [
+        {
+          "input": "Write a short story about a robot discovering human emotions.",
+          "expected_output": "A creative short story about a robot discovering human emotions, with coherent narrative and emotional depth."
+        },
+        {
+          "input": "Compose a poem about autumn leaves.",
+          "expected_output": "A poetic composition about autumn leaves with appropriate imagery and emotional resonance."
+        },
+        {
+          "input": "Write a dialogue between two strangers meeting on a train.",
+          "expected_output": "A realistic dialogue between two strangers meeting on a train with natural conversation flow."
+        }
+      ]
+    },
+    {
+      "id": "image-object-recognition",
+      "name": "Image Object Recognition",
+      "type": "image",
+      "description": "This benchmark tests the model's ability to recognize and describe objects in images.",
+      "metrics": ["accuracy", "relevance", "detail_level"],
+      "example": {
+        "task_description": "Describe all the major objects visible in this image.",
+        "expected_output": "A detailed description of the visible objects in the image."
+      }
+    },
+    {
+      "id": "image-visual-reasoning",
+      "name": "Visual Reasoning",
+      "type": "image",
+      "description": "This benchmark tests the model's ability to reason about spatial relationships and visual contexts.",
+      "metrics": ["accuracy", "reasoning", "relevance"],
+      "example": {
+        "task_description": "What is the spatial relationship between the objects in this image? Which object is likely to move first?",
+        "expected_output": "A description of spatial relationships and reasoning about potential movement in the scene."
+      }
+    },
+    {
+      "id": "image-chart-analysis",
+      "name": "Chart and Graph Analysis",
+      "type": "image",
+      "description": "This benchmark evaluates the model's ability to interpret charts and graphs.",
+      "metrics": ["accuracy", "detail_level", "insight_quality"],
+      "example": {
+        "task_description": "Analyze this chart and provide the key insights from the data.",
+        "expected_output": "A detailed analysis identifying trends, outliers, and key insights from the chart."
+      }
+    },
+    {
+      "id": "video-scene-understanding",
+      "name": "Video Scene Understanding",
+      "type": "video",
+      "description": "This benchmark tests the model's ability to understand and describe scenes in a video.",
+      "metrics": ["accuracy", "temporal_coherence", "detail_level"],
+      "example": {
+        "task_description": "Describe what is happening in this video sequence.",
+        "expected_output": "A temporally coherent description of the events occurring in the video."
+      }
+    },
+    {
+      "id": "video-action-recognition",
+      "name": "Video Action Recognition",
+      "type": "video",
+      "description": "This benchmark evaluates the model's ability to recognize and describe actions in a video.",
+      "metrics": ["accuracy", "temporal_coherence", "relevance"],
+      "example": {
+        "task_description": "What actions are being performed in this video?",
+        "expected_output": "An accurate identification of the actions being performed in the video."
+      }
+    },
+    {
+      "id": "audio-speech-understanding",
+      "name": "Speech Understanding",
+      "type": "audio",
+      "description": "This benchmark tests the model's ability to understand and transcribe spoken language.",
+      "metrics": ["accuracy", "completeness", "error_rate"],
+      "example": {
+        "task_description": "Transcribe the speech in this audio file.",
+        "expected_output": "An accurate transcription of the spoken content."
+      }
+    },
+    {
+      "id": "audio-emotion-recognition",
+      "name": "Audio Emotion Recognition",
+      "type": "audio",
+      "description": "This benchmark evaluates the model's ability to recognize emotions in speech.",
+      "metrics": ["accuracy", "insight_quality", "relevance"],
+      "example": {
+        "task_description": "What emotions are being expressed in this audio clip?",
+        "expected_output": "An accurate identification of the emotions expressed in the speech."
+      }
+    },
+    {
+      "id": "multimodal-image-caption",
+      "name": "Image Captioning",
+      "type": "multimodal",
+      "description": "This benchmark tests the model's ability to generate accurate and relevant captions for images.",
+      "metrics": ["accuracy", "relevance", "detail_level"],
+      "example": {
+        "task_description": "Generate a detailed caption for this image.",
+        "expected_output": "A detailed and accurate caption describing the image content."
+      }
+    },
+    {
+      "id": "multimodal-visual-qa",
+      "name": "Visual Question Answering",
+      "type": "multimodal",
+      "description": "This benchmark evaluates the model's ability to answer questions about images.",
+      "metrics": ["accuracy", "relevance", "reasoning"],
+      "example": {
+        "task_description": "Based on the image, answer the following question: What color is the car in the foreground?",
+        "expected_output": "An accurate answer to the question based on visual information."
+      }
+    },
+    {
+      "id": "knowledge-research",
+      "name": "Research Capabilities",
+      "type": "text",
+      "description": "This benchmark tests the model's ability to synthesize information and perform research-like tasks.",
+      "metrics": ["accuracy", "coherence", "insight_quality", "relevance"],
+      "example": {
+        "input": "Explain the current scientific understanding of dark matter.",
+        "expected_output": "A comprehensive, accurate explanation of the current scientific understanding of dark matter."
+      },
+      "tasks": [
+        {
+          "input": "Explain the current scientific understanding of dark matter.",
+          "expected_output": "A comprehensive, accurate explanation of the current scientific understanding of dark matter."
+        },
+        {
+          "input": "Compare and contrast different approaches to quantum computing.",
+          "expected_output": "A detailed comparison of different quantum computing approaches, including gate-based, annealing, and topological methods."
+        },
+        {
+          "input": "Summarize the latest research on mRNA vaccines.",
+          "expected_output": "An accurate summary of recent research developments in mRNA vaccine technology."
+        }
+      ]
+    },
+    {
+      "id": "knowledge-reasoning",
+      "name": "Logical Reasoning",
+      "type": "text",
+      "description": "This benchmark tests the model's ability to perform logical reasoning tasks.",
+      "metrics": ["accuracy", "reasoning", "coherence"],
+      "example": {
+        "input": "If all A are B, and some B are C, what can we conclude about A and C?",
+        "expected_output": "We cannot make a definitive conclusion about the relationship between A and C based on the given information. Some A may be C, but it's also possible that no A are C."
+      },
+      "tasks": [
+        {
+          "input": "If all A are B, and some B are C, what can we conclude about A and C?",
+          "expected_output": "We cannot make a definitive conclusion about the relationship between A and C based on the given information. Some A may be C, but it's also possible that no A are C."
+        },
+        {
+          "input": "If it rains, the ground gets wet. The ground is wet. Did it rain?",
+          "expected_output": "Not necessarily. While rain would cause the ground to be wet, there could be other causes for wet ground, such as a sprinkler, spilled water, or melting snow."
+        },
+        {
+          "input": "All students in the class passed the exam. John is in the class. Did John pass the exam?",
+          "expected_output": "Yes, John passed the exam. Since all students in the class passed, and John is a student in the class, John must have passed."
+        },
+        {
+          "input": "If x > y and y > z, is x > z?",
+          "expected_output": "Yes, if x > y and y > z, then x > z. This is the transitive property of inequality."
+        }
+      ]
+    }
+  ]
+}

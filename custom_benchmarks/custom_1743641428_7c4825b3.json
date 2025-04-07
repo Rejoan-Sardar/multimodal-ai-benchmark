@@ -1,0 +1,15 @@
+{
+  "id": "custom_1743641428_7c4825b3",
+  "name": "apple",
+  "type": "multimodal",
+  "description": "apple are",
+  "metrics": [
+    "accuracy",
+    "relevance"
+  ],
+  "created_at": "2025-04-03 00:50:28",
+  "is_custom": true,
+  "example": {
+    "task_description": "good"
+  }
+}

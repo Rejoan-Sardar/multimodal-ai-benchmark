@@ -1,0 +1,15 @@
+{
+  "id": "custom_1743640311_20befb63",
+  "name": "fafaf",
+  "type": "multimodal",
+  "description": "fafa",
+  "metrics": [
+    "accuracy",
+    "relevance"
+  ],
+  "created_at": "2025-04-03 00:31:51",
+  "is_custom": true,
+  "example": {
+    "task_description": "faf"
+  }
+}
