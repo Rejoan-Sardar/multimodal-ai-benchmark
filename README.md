@@ -168,13 +168,6 @@ To add support for new models:
 Comprehensive documentation is available in the `docs/` directory. See:
 - [Benchmark Documentation](docs/benchmark_documentation.md) for detailed usage instructions
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgements
 
